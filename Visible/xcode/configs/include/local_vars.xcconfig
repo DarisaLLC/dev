@@ -27,7 +27,7 @@ LOCAL_IMGUI = $(EXTERNALS)/imgui_module
 LOCAL_CIIMGUI = $(EXTERNALS)/Cinder-ImGui
 
 LOCAL_3rdParty = $(SVL_ROOT)/local
-LOCAL_BOOST = /usr/local/boost/1.67.0_1
+LOCAL_BOOST = /usr/local/
 LOCAL_PNG = $(LOCAL_3rdParty)/png/
 LOCAL_gtest = $(LOCAL_3rdParty)/gtest
 LOCAL_EIGEN = $(LOCAL_3rdParty)/Eigen

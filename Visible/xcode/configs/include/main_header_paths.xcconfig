@@ -8,6 +8,7 @@
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
 
+#include "include/local_vars.xcconfig"
 
 HEADER_SEARCH_PATHS = $(VISIBLE_ROOT)/include $(VISIBLE_ROOT)/include/plistcpp $(SVL_ROOT)/include /usr/local/include $(LOCAL_CINDER)/include $(LOCAL_BOOST)/include $(LOCAL_gtest)/include $(LOCAL_OCV)/include $(LOCAL_TINYXML) $(LOCAL_EIGEN) $(LOCAL_CEREAL) $(LOCAL_TINYXML) $(LOCAL_CIMG)  $(LOCAL_CIMG)/plugins $(LOCAL_SPDLOG)/include $(LOCAL_IMGUI) $(LOCAL_CIIMGUI)/include  $(LOCAL_FMT)/include $(LOCAL_GSL)/include
 

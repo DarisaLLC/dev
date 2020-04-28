@@ -3120,7 +3120,6 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				LOCAL_BOOST = /usr/local/boost/1.67.0_1;
 				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				ON_DEMAND_RESOURCES_PREFETCH_ORDER = "";
@@ -3170,7 +3169,6 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				LOCAL_BOOST = /usr/local/boost/1.67.0_1;
 				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				ON_DEMAND_RESOURCES_PREFETCH_ORDER = "";
@@ -3290,7 +3288,6 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "VisibleGtest copy2-Info.plist";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				LOCAL_BOOST = /usr/local/boost/1.67.0_1;
 				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -3344,7 +3341,6 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "VisibleGtest copy2-Info.plist";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				LOCAL_BOOST = /usr/local/boost/1.67.0_1;
 				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -3403,7 +3399,6 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				LOCAL_BOOST = /usr/local/boost/1.67.0_1;
 				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -3456,7 +3451,6 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				LOCAL_BOOST = /usr/local/boost/1.67.0_1;
 				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -3654,7 +3648,6 @@
 				INFOPLIST_FILE = "VisibleRunner-Info.plist";
 				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				LOCAL_BOOST = /usr/local/boost/1.67.0_1;
 				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				OTHER_LDFLAGS = "$(inherited)";
@@ -3705,7 +3698,6 @@
 				INFOPLIST_FILE = "VisibleRunner-Info.plist";
 				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				LOCAL_BOOST = /usr/local/boost/1.67.0_1;
 				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				OTHER_LDFLAGS = "$(inherited)";
@@ -3767,7 +3759,6 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "affineApp-Info.plist";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				LOCAL_BOOST = /usr/local/boost/1.67.0_1;
 				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -3822,7 +3813,6 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "affineApp-Info.plist";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				LOCAL_BOOST = /usr/local/boost/1.67.0_1;
 				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -3867,7 +3857,6 @@
 				INFOPLIST_FILE = Bina.plist;
 				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				LOCAL_BOOST = /usr/local/boost/1.67.0_1;
 				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				ON_DEMAND_RESOURCES_PREFETCH_ORDER = "";
@@ -3916,7 +3905,6 @@
 				INFOPLIST_FILE = Bina.plist;
 				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				LOCAL_BOOST = /usr/local/boost/1.67.0_1;
 				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				ON_DEMAND_RESOURCES_PREFETCH_ORDER = "";
