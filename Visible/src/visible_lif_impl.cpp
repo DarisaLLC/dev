@@ -1084,10 +1084,10 @@ void lifContext::add_motion_profile (){
     ImGui::SetNextWindowPos(pos);
     ImGui::SetNextWindowContentSize(frame);
     
-    if (ImGui::Begin(wShape, nullptr, ImGuiWindowFlags_NoScrollbar  ))
+    if (ImGui::Begin(wShape, nullptr ))
     {
         if(m_segmented_texture){
-            ImGui::BeginChild(" ", frame, true,  ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoScrollbar );
+            ImGui::BeginChild(" ", frame, true );
             ImGui::Image( (void*)(intptr_t) m_segmented_texture->getId(), frame);
             ImGui::EndChild();
         }
