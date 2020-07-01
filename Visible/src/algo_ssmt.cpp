@@ -9,7 +9,7 @@
 #pragma GCC diagnostic ignored "-Wcomma"
 #pragma GCC diagnostic ignored "-Wunused-private-field"
 
-
+#include "opencv2/stitching.hpp"
 #include <stdio.h>
 #include <iostream>
 #include <string>

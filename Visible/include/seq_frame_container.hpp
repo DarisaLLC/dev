@@ -1,13 +1,12 @@
 #ifndef __QTIME_FRAMES_
 #define __QTIME_FRAMES_
 
+#ifdef __OCV_VIDEO_
 #include "cvVideoPlayer.h"
+#endif
 #include <cinder/Channel.h>
 #include <cinder/Area.h>
 #include <limits>
-#include "cinder/qtime/QuickTime.h"
-#include "cinder/qtime/QuickTimeUtils.h"
-#include "cinder/qtime/QuickTimeGl.h"
 #include "cinder/Thread.h"
 #include "sshist.hpp"
 #include "roiWindow.h"

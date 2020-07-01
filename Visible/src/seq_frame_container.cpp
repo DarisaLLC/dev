@@ -102,7 +102,7 @@ std::shared_ptr<seqFrameContainer> seqFrameContainer::create (const lifIO::LifSe
     return thisref;
 }
 
-#ifdef OCV_PLAYER
+#ifdef __OCV_VIDEO_
 template<>
 std::shared_ptr<seqFrameContainer> seqFrameContainer::create (const cvVideoPlayer::ref& mMovie)
 {
@@ -132,34 +132,6 @@ std::shared_ptr<seqFrameContainer> seqFrameContainer::create (const cvVideoPlaye
     
 }
 #endif
-
-template<>
-std::shared_ptr<seqFrameContainer> seqFrameContainer::create  (const ci::qtime::MovieSurfaceRef& mMovie)
-{
-    tiny_media_info minfo;
-    minfo.size.width = mMovie->getWidth();
-    minfo.size.height = mMovie->getHeight();
-    minfo.mFps = mMovie->getFramerate();
-    minfo.count = mMovie->getNumFrames ();
-    minfo.duration = mMovie->getDuration();
-    seqFrameContainer::ref thisref (new seqFrameContainer(minfo));
-    return thisref;
-    
-}
-
-template<>
-std::shared_ptr<seqFrameContainer> seqFrameContainer::create  (const ci::qtime::MovieGlRef& mMovie)
-{
-    tiny_media_info minfo;
-    minfo.size.width = mMovie->getWidth();
-    minfo.size.height = mMovie->getHeight();
-    minfo.mFps = mMovie->getFramerate();
-    minfo.count = mMovie->getNumFrames ();
-    minfo.duration = mMovie->getDuration();
-    seqFrameContainer::ref thisref (new seqFrameContainer(minfo));
-    return thisref;
-    
-}
 
 template<>
 std::shared_ptr<seqFrameContainer> seqFrameContainer::create (const std::shared_ptr<avcc::avReader>& asset_reader)

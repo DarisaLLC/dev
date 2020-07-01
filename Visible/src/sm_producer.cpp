@@ -2,7 +2,7 @@
 #pragma GCC diagnostic ignored "-Wcomma"
 
 
-
+#include "opencv2/stitching.hpp" 
 #include "sm_producer.h"
 #include "sm_producer_impl.h"
 #include "self_similarity.h"
