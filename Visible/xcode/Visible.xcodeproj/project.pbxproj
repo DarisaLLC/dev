@@ -394,6 +394,9 @@
 		C2CE9C8B22A97D2D003C479A /* math.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2CE9C8122A97D2D003C479A /* math.cpp */; };
 		C2D86DF81E5A4FA5007492D4 /* cinder_support.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D86DF71E5A4FA5007492D4 /* cinder_support.cpp */; };
 		C2D86DF91E5A4FCE007492D4 /* cinder_support.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D86DF71E5A4FA5007492D4 /* cinder_support.cpp */; };
+		C2D8DE972509AD2B009F2FAB /* tiffio_wrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D8DE962509AD2B009F2FAB /* tiffio_wrapper.cpp */; };
+		C2D8DE982509AD2B009F2FAB /* tiffio_wrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D8DE962509AD2B009F2FAB /* tiffio_wrapper.cpp */; };
+		C2D8DE992509AD2B009F2FAB /* tiffio_wrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D8DE962509AD2B009F2FAB /* tiffio_wrapper.cpp */; };
 		C2DA195A1E80E4E100062DBC /* csv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2DA19561E7F30D800062DBC /* csv.cpp */; };
 		C2DA195B1E80E4E200062DBC /* csv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2DA19561E7F30D800062DBC /* csv.cpp */; };
 		C2E0EE621F7B079300D32697 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C260693D1CED3E2B0045FF57 /* libgtest.a */; };
@@ -908,6 +911,8 @@
 		C2CE9C8C22A97E8E003C479A /* gen_utils.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = gen_utils.hpp; sourceTree = "<group>"; };
 		C2D23FCA219B9B3E00F4A49E /* libboost_thread-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_thread-mt.a"; path = "../../../../../../../usr/local/Cellar/boost/1.67.0_1/lib/libboost_thread-mt.a"; sourceTree = "<group>"; };
 		C2D86DF71E5A4FA5007492D4 /* cinder_support.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cinder_support.cpp; sourceTree = "<group>"; };
+		C2D8DE962509AD2B009F2FAB /* tiffio_wrapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tiffio_wrapper.cpp; path = ../src/tiffio_wrapper.cpp; sourceTree = "<group>"; };
+		C2D8DE9A2509B1EA009F2FAB /* tiffio_wrapper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = tiffio_wrapper.hpp; path = ../include/tiffio_wrapper.hpp; sourceTree = "<group>"; };
 		C2DA19561E7F30D800062DBC /* csv.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = csv.cpp; sourceTree = "<group>"; };
 		C2DA19581E7F30E800062DBC /* csv.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = csv.hpp; sourceTree = "<group>"; };
 		C2DA19591E8091FA00062DBC /* kmeans1d.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = kmeans1d.hpp; sourceTree = "<group>"; };
@@ -1078,6 +1083,7 @@
 		080E96DDFE201D6D7F000001 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				C2D8DE962509AD2B009F2FAB /* tiffio_wrapper.cpp */,
 				C2C2E3562496CB2E00E26B3E /* imgui_experiment.cpp */,
 				C2AC7A6B24808A2C00853219 /* nfd_cocoa.m */,
 				C2AC7A6A24808A2C00853219 /* nfd_common.c */,
@@ -1293,6 +1299,7 @@
 		C21946B11CE4EA6100976025 /* include */ = {
 			isa = PBXGroup;
 			children = (
+				C2D8DE9A2509B1EA009F2FAB /* tiffio_wrapper.hpp */,
 				C2C2E3552496CAA900E26B3E /* imgui_experiment.hpp */,
 				C2AC7A6E24808A8E00853219 /* nfd.h */,
 				C20E6F602460AD7E005B5DC9 /* visible_types.h */,
@@ -2138,6 +2145,7 @@
 				C2B2F209234D1E6B0026ADDB /* moviong_region.cpp in Sources */,
 				C2BDEFEE21C8232300A8CB94 /* core_support.cpp in Sources */,
 				C2109476223F4CFE004E88EE /* opencv_draw.cpp in Sources */,
+				C2D8DE972509AD2B009F2FAB /* tiffio_wrapper.cpp in Sources */,
 				C28B01CC229B1DE500B8165D /* lif_serie.cpp in Sources */,
 				C2398A0921DD8A0A00B180A0 /* file_system.cpp in Sources */,
 				C2618F83217FDA6600FA9F43 /* highgui.cc in Sources */,
@@ -2224,6 +2232,7 @@
 				C280DB3E2492A9B20027DB2D /* imgui_widgets.cpp in Sources */,
 				C24EA2D4207F081000555D16 /* sg_filter.cpp in Sources */,
 				C27221161D1C912E008EF8B2 /* histo.cpp in Sources */,
+				C2D8DE982509AD2B009F2FAB /* tiffio_wrapper.cpp in Sources */,
 				C2ED059C22D158ED00314C1B /* labelconnect.cpp in Sources */,
 				C2770659226A402C00215A55 /* cvVideoPlayer.cpp in Sources */,
 				C2AEB73D228CD6E70078E687 /* geom_utils.cpp in Sources */,
@@ -2302,6 +2311,7 @@
 				C26A056A1E777E3600BDC954 /* matpixel.cpp in Sources */,
 				C26A055F1E7775A700BDC954 /* AVReaderWrapper.mm in Sources */,
 				C26A05661E777E1000BDC954 /* time_spec.cpp in Sources */,
+				C2D8DE992509AD2B009F2FAB /* tiffio_wrapper.cpp in Sources */,
 				C26A055B1E7774D800BDC954 /* seq_frame_container.cpp in Sources */,
 				C26A056D1E777E6B00BDC954 /* exception.cpp in Sources */,
 				C26A05671E777E2100BDC954 /* tinyxml.cpp in Sources */,
