@@ -45,7 +45,7 @@ ssmt_result::ssmt_result(const moving_region& mr,const input_channel_selector_t&
     
     // Suport lif_processor::Contraction Analyzed
     std::function<void (contractionLocator::contractionContainer_t&,const input_channel_selector_t& in)>ca_analyzed_cb =
-        boost::bind (&ssmt_result::contraction_ready, this, _1, _2);
+    boost::bind (&ssmt_result::contraction_ready, this, boost::placeholders::_1, boost::placeholders::_2);
     boost::signals2::connection ca_connection = m_caRef->registerCallback(ca_analyzed_cb);
 }
 

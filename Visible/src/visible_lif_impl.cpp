@@ -159,7 +159,7 @@ void lifContext::setup_signals(){
     m_lifProcRef = std::make_shared<ssmt_processor> (mCurrentSerieCachePath);
     
     // Support lifProcessor::content_loaded
-    std::function<void (int64_t&)> content_loaded_cb = boost::bind (&lifContext::signal_content_loaded, shared_from_above(), _1);
+    std::function<void (int64_t&)> content_loaded_cb = boost::bind (&lifContext::signal_content_loaded, shared_from_above(), boost::placeholders::_1);
     boost::signals2::connection ml_connection = m_lifProcRef->registerCallback(content_loaded_cb);
     
     // Support lifProcessor::flu results available
@@ -167,24 +167,24 @@ void lifContext::setup_signals(){
     boost::signals2::connection flu_connection = m_lifProcRef->registerCallback(intensity_over_time_ready_cb);
     
     // Support lifProcessor::initial ss results available
-    std::function<void (std::vector<float> &, const input_channel_selector_t&)> root_pci_ready_cb = boost::bind (&lifContext::signal_root_pci_ready, shared_from_above(), _1, _2);
+    std::function<void (std::vector<float> &, const input_channel_selector_t&)> root_pci_ready_cb = boost::bind (&lifContext::signal_root_pci_ready, shared_from_above(), boost::placeholders::_1, boost::placeholders::_2);
     boost::signals2::connection nl_connection = m_lifProcRef->registerCallback(root_pci_ready_cb);
     
     // Support lifProcessor::median level set ss results available
-    std::function<void (const input_channel_selector_t&)> root_pci_med_reg_ready_cb = boost::bind (&lifContext::signal_root_pci_med_reg_ready, shared_from_above(), _1);
+    std::function<void (const input_channel_selector_t&)> root_pci_med_reg_ready_cb = boost::bind (&lifContext::signal_root_pci_med_reg_ready, shared_from_above(), boost::placeholders::_1);
     boost::signals2::connection ol_connection = m_lifProcRef->registerCallback(root_pci_med_reg_ready_cb);
     
     // Support lifProcessor::contraction results available
     std::function<void (contractionLocator::contractionContainer_t&,const input_channel_selector_t&)> contraction_ready_cb =
-        boost::bind (&lifContext::signal_contraction_ready, shared_from_above(), _1, _2);
+        boost::bind (&lifContext::signal_contraction_ready, shared_from_above(), boost::placeholders::_1, boost::placeholders::_2);
     boost::signals2::connection contraction_connection = m_lifProcRef->registerCallback(contraction_ready_cb);
     
     // Support lifProcessor::geometry_ready
-    std::function<void (int,const input_channel_selector_t&)> geometry_ready_cb = boost::bind (&lifContext::signal_regions_ready, shared_from_above(), _1, _2);
+    std::function<void (int,const input_channel_selector_t&)> geometry_ready_cb = boost::bind (&lifContext::signal_regions_ready, shared_from_above(), boost::placeholders::_1, boost::placeholders::_2);
     boost::signals2::connection geometry_connection = m_lifProcRef->registerCallback(geometry_ready_cb);
     
     // Support lifProcessor::temporal_image_ready
-    std::function<void (cv::Mat&,cv::Mat&)> ss_segmented_view_ready_cb = boost::bind (&lifContext::signal_segmented_view_ready, shared_from_above(), _1, _2);
+    std::function<void (cv::Mat&,cv::Mat&)> ss_segmented_view_ready_cb = boost::bind (&lifContext::signal_segmented_view_ready, shared_from_above(), boost::placeholders::_1, boost::placeholders::_2);
     boost::signals2::connection ss_image_connection = m_lifProcRef->registerCallback(ss_segmented_view_ready_cb);
     
 }

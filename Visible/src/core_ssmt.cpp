@@ -65,15 +65,15 @@ mCurrentCachePath(serie_cache_folder), m_params(params)
     
     // Signal us when ss segmentation surface is ready
     std::function<sig_cb_segmented_view_ready> _ss_segmentation_done_cb = boost::bind (&ssmt_processor::finalize_segmentation,
-                                                                                       this, _1, _2);
+                                                                                       this, boost::placeholders::_1, boost::placeholders::_2);
     boost::signals2::connection _ss_image_connection = registerCallback(_ss_segmentation_done_cb);
     
     // Signal us when ss segmentation is ready
-    std::function<sig_cb_ss_voxel_ready> _ss_voxel_done_cb = boost::bind (&ssmt_processor::create_voxel_surface,this, _1);
+    std::function<sig_cb_ss_voxel_ready> _ss_voxel_done_cb = boost::bind (&ssmt_processor::create_voxel_surface,this, boost::placeholders::_1);
     boost::signals2::connection _ss_voxel_connection = registerCallback(_ss_voxel_done_cb);
     
     // Support lifProcessor::geometry_ready
-    std::function<void (int, const input_channel_selector_t&)> geometry_ready_cb = boost::bind (&ssmt_processor::signal_geometry_done, this, _1, _2);
+    std::function<void (int, const input_channel_selector_t&)> geometry_ready_cb = boost::bind (&ssmt_processor::signal_geometry_done, this, boost::placeholders::_1, boost::placeholders::_2);
     boost::signals2::connection geometry_connection = registerCallback(geometry_ready_cb);
 }
 
